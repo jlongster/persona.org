@@ -1,0 +1,3 @@
+# Lugosi
+
+npm install
