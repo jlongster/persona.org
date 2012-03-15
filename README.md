@@ -2,14 +2,20 @@
 
 ## Installation instructions
 
-brew install redis
+Install brew https://github.com/mxcl/homebrew
 
-curl http://npmjs.org/install.sh | sh
+> brew install redis
 
-cd lugosi
+> redis-server (location of this will vary on your system)
 
-npm install
+> curl http://npmjs.org/install.sh | sh
 
-redis-server
+> cd lugosi
 
-node app.js
+> npm install
+
+> node app.js
+
+## Run the Tests
+
+> make test
