@@ -5,10 +5,6 @@ module.exports = function(app, settings) {
   app.post('/login', function(req, res) {
     auth.verify(req, settings, function(error, email) {
       if(email) {
-        res.cookie('rememberme', 'yes', {
-          secure: settings.options.secureCookie,
-          httpOnly: true
-        });
         req.session.email = email;
       }
       res.redirect('back');
