@@ -1,16 +1,13 @@
 var assert = require('assert');
 var auth = require('../lib/authenticate');
 var nock = require('nock');
-
-var settings = {};
-settings.options = {
-  domain: 'http://localhost',
-  port: 3000,
-  authUrl: 'https://browserid.org'
-}
+var express = require('express');
+var configurations = module.exports;
+var app = express.createServer();
+var settings = require('../settings')(app, configurations, express);
 
 var authUrl = settings.options.authUrl + '/verify';
-var siteUrl = settings.options.domain + ':' + settings.options.port;
+var siteUrl = settings.options.domain + ':' + settings.options.authPort;
 var qs = { assertion: '1a2b3c', audience: siteUrl };
 
 suite('login', function() {
