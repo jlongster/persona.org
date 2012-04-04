@@ -8,5 +8,7 @@ var settings = require('./settings')(app, configurations, express);
 require('./routes')(app);
 require('./routes/auth')(app, settings);
 
-app.listen(settings.options.port);
-console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
+process.env['AWS_ID'] = settings.options.aws_id;
+process.env['AWS_SECRET'] = settings.options.aws_secret;
+
+app.listen(process.env['PORT'] || 3000, '127.0.0.1');

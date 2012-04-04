@@ -2,6 +2,10 @@
   "name": "lugosi",
   "version": "0.0.1",
   "private": true,
+  "engines": {
+    "node": ">= 0.6.5",
+    "npm": "1.0.x"
+  },
   "dependencies": {
     "client-sessions": "0.0.3",
     "connect": "1.7.2",
@@ -13,6 +17,7 @@
     "nock": "0.10.7",
     "request": "2.9.153",
     "uglify-js": "1.0.6",
-    "uglifycss": "0.0.5"
+    "uglifycss": "0.0.5",
+    "awsbox": "git://github.com/lloyd/awsbox.git"
   }
 }
