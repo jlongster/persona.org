@@ -18,6 +18,6 @@
     "request": "2.9.153",
     "uglify-js": "1.0.6",
     "uglifycss": "0.0.5",
-    "awsbox": "*"
+    "awsbox": "git://github.com/lloyd/awsbox.git"
   }
 }
