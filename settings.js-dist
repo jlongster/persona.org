@@ -27,7 +27,7 @@ module.exports = function(app, configurations, express) {
     app.use(express.methodOverride());
     app.use(express.static(__dirname + '/public'));
     app.use(clientSessions({
-      cookieName: 'session_lugosi',
+      cookieName: 'session_persona',
       secret: 'secret', // MUST be set
       // true session duration:
       // will expire after duration (ms)
@@ -35,8 +35,8 @@ module.exports = function(app, configurations, express) {
       // initial cookieing.
       duration: 24 * 60 * 60 * 1000 * 7, // 1 week
     }));
-    app.use(app.router);
     app.use(express.csrf());
+    app.use(app.router);
   });
 
   app.configure('development, test', function(){
