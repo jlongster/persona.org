@@ -23,6 +23,7 @@ module.exports = function(app, settings) {
   // Logout
   app.get('/logout', function(req, res) {
     req.session.email = null;
+    req.session._csrf = null;
     res.redirect('/');
   });
 };

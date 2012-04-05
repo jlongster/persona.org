@@ -1,4 +1,4 @@
-# Lugosi
+# Persona.org
 
 ## Installation instructions
 
@@ -8,7 +8,9 @@ Install brew https://github.com/mxcl/homebrew
 
 > curl http://npmjs.org/install.sh | sh
 
-> cd lugosi
+> cd persona.org
+
+> cp settings.js-dist settings.js
 
 > npm install
 
