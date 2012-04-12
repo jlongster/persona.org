@@ -3,7 +3,7 @@ module.exports = function(app) {
    * they can access views that require login
    */
   var isAuthenticated = function(req, res, next) {
-    if(!req.session.email) {
+    if (!req.session.email) {
       res.redirect('/');
     } else {
       next();

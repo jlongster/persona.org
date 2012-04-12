@@ -2,7 +2,7 @@ var auth = require('../lib/authenticate');
 
 module.exports = function(app, settings) {
   // Csrf check filter for pages with forms
-  var checkCsrf = function(req, res, next) {
+  var checkCSRF = function(req, res, next) {
     if (req.session._csrf !== req.body._csrf) {
       res.redirect('/');
     } else {
@@ -11,9 +11,9 @@ module.exports = function(app, settings) {
   };
 
   // Login
-  app.post('/login', checkCsrf, function(req, res) {
+  app.post('/login', checkCSRF, function(req, res) {
     auth.verify(req, settings, function(error, email) {
-      if(email) {
+      if (email) {
         req.session.email = email;
       }
       res.redirect('/dashboard');

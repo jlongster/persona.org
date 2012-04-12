@@ -8,4 +8,4 @@ var settings = require('./settings')(app, configurations, express);
 require('./routes')(app);
 require('./routes/auth')(app, settings);
 
-app.listen(process.env['PORT'] || settings.options.port, settings.options.domain);
+app.listen(process.env['PORT'] || settings.options.port);
