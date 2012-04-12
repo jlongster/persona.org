@@ -4,9 +4,9 @@
 
 Clone the repository
 
-Install brew https://github.com/mxcl/homebrew
-
 > curl http://npmjs.org/install.sh | sh
+
+Install node by using brew or through the website http://nodejs.org/#download
 
 > cd persona.org
 
