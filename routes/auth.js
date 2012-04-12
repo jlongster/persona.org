@@ -1,7 +1,7 @@
-module.exports = function(app, settings) {
-  var auth = require('../lib/authenticate');
+var auth = require('../lib/authenticate');
 
-  // Csrf check for pages with forms
+module.exports = function(app, settings) {
+  // Csrf check filter for pages with forms
   var checkCsrf = function(req, res, next) {
     if (req.session._csrf !== req.body._csrf) {
       res.redirect('/');
