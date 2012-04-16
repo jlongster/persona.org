@@ -14,10 +14,10 @@
     "i18n-abide": "git://github.com/mozilla/i18n-abide.git",
     "jade": "0.22.1",
     "mocha": "0.14.1",
+    "should": ">= 0.0.1",
     "nock": "0.10.7",
     "request": "2.9.153",
     "uglify-js": "1.0.6",
-    "uglifycss": "0.0.5",
-    "awsbox": "git://github.com/lloyd/awsbox.git"
+    "uglifycss": "0.0.5"
   }
 }
