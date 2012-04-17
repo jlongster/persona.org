@@ -1,0 +1,93 @@
+#clipper {
+    background-color: #e8e9e9;
+    background-image: url('../../../images/wallpaper.png');
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: #ccc -1px -1px 0px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    position: relative;
+    text-align: left;
+    width: 400px;
+}
+
+.dashboard {
+    border: 0px;
+    height: 110;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+}
+
+
+.page { 
+    display: inline-block;
+    overflow: hidden; 
+    position: relative;
+    vertical-align: top;
+}
+
+.pageindicator {
+    border: 0px;
+    bottom: -10px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    text-align: center; 
+    white-space: nowrap;
+}
+
+.pagemark {
+    display: inline-block;
+    vertical-align: middle;  
+}
+
+.appDisplayFrame {
+    border: 0px;
+    position: absolute;
+}
+
+.liftedApp {
+    -webkit-box-shadow: 2px 6px 10px 2px rgb(0, 0, 0);
+    box-shadow: 2px 6px 10px 2px rgb(0, 0, 0);
+}
+      
+.highlighted {
+    background-color: black;
+    opacity: 0.25;
+}
+
+.icon {
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+    box-shadow: #ccc 1px 1px 3px 1px inset;
+    height: 55%;
+    margin-top:20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    position: relative;
+    width: 60%;
+}
+
+.iconshader {
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
+    border-radius: 10%;
+}
+
+.appLabel {
+    font-size: 13px;
+    line-height: 15px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}

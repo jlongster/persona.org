@@ -1,4 +1,15 @@
 extends layout
 
+block dashboard_header
+  link(rel='stylesheet', href='/stylesheets/lib/icongrid.css')
+
 block content
-  h1 Dashboard
+  h1.headline-main= gettext('Dashboard')
+
+  .container
+    #clipper
+
+block footer_user
+  script(src='../javascripts/lib/base32.js')
+  script(src='../javascripts/lib/apps.js')
+  script(src='../javascripts/lib/icongrid.js')
