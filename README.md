@@ -24,14 +24,6 @@ Install node by using brew or through the website http://nodejs.org/#download
 
 > ./bin/update_languages.sh
 
-## One-time l10n hack
-
-Temporary fix:
-
-> cd locale/templates/LC_MESSAGES
-
-> change `"Content-Type: text/plain; charset=CHARSET\n"` to `"Content-Type: text/plain; charset=UTF-8\n"` and save.
-
 ## Merge and compile
 
 > merge_po.sh ./locale
