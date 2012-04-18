@@ -4,12 +4,9 @@ block dashboard_header
   link(rel='stylesheet', href='/stylesheets/lib/icongrid.css')
 
 block content
-  h1.headline-main= gettext('Dashboard')
-
-  .container
-    #clipper
-
-block footer_user
-  script(src='../javascripts/lib/base32.js')
-  script(src='../javascripts/lib/apps.js')
-  script(src='../javascripts/lib/icongrid.js')
+  h1= gettext('Apps')
+  .container#dashboard
+    #apps.dashboardclipper
+      .dashboard
+        #help
+          !{format(gettext('You have no apps installed. Apps are available in the <a %s>Marketplace</a>'), [' href="https://apps.mozillalabs.com/appdir/" target="_blank"'])}

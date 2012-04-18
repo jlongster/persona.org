@@ -1,16 +1,40 @@
-#clipper {
-    background-color: #e8e9e9;
+#apps {
+    background-color: #e8edf0;
     background-image: url('../../../images/wallpaper.png');
     border: 1px solid #eee;
     border-radius: 5px;
     box-shadow: #ccc -1px -1px 0px;
-    height: 300px;
-    margin: 20px;
+    height: 400px;
+    margin: 0 auto;
     overflow: hidden;
     padding-bottom: 10px;
     position: relative;
     text-align: left;
-    width: 400px;
+    width: 600px;
+}
+
+.remover {
+    display: none;
+}
+
+.showremover {
+    display: block;
+}
+
+#help, #help-permissions {
+  color: #888888;
+  display: block;
+  font-size: 16px;
+  height: 250px;
+  line-height: 22px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+#help {
+  text-align: center;
 }
 
 .dashboard {
@@ -20,6 +44,27 @@
     overflow: hidden;
     padding: 0px;
     position: absolute;
+}
+
+button.delete {
+    background-color: #222;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px 3px 2px 4px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    z-index: 3;
+}
+
+.icon:hover button.delete {
+    display: block;
 }
 
 
