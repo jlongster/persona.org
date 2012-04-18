@@ -18,8 +18,6 @@ Install node by using brew or through the website http://nodejs.org/#download
 
 > mkdir -p locale/templates/LC_MESSAGES
 
-> cp node_modules/i18n-abide/bin/extract_po.sh bin/
-
 > export PATH=$PATH:node_modules/i18n-abide/bin
 
 > ./bin/extract_po.sh
