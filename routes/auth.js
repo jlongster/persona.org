@@ -22,8 +22,10 @@ module.exports = function(app, settings) {
 
   // Logout
   app.get('/logout', function(req, res) {
-    req.session.email = null;
-    req.session._csrf = null;
+    if (req.session) {
+      delete req.session.email;
+      delete req.session._csrf;
+    }
     res.redirect('/');
   });
 };
