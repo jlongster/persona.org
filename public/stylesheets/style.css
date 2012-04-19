@@ -170,6 +170,15 @@ h1 {
     margin: 0px 0px 24px;
 }
 
-#colophon a, #colophon a:visited {
+#colophon button {
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    line-height: 13px;
+}
+
+#colophon a, #colophon button, #colophon a:visited {
     color: #2983c8;
+    display: inline;
+    font-size: 14px;
 }
