@@ -50,9 +50,7 @@ html(lang='#{lang}', dir='#{lang_dir}')
               ul
                 li
                   if session.email
-                    form(method='post', action='/logout', class='logout')
-                      input(type='hidden', name='_csrf', value='#{token}')
-                      button(type='submit')= gettext('Log out')
+                    a(href='/logout')= gettext('Log out')
                   else
                     a(href='#', id='login')
                       img(src='../images/persona-button.png')

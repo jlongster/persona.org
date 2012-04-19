@@ -21,11 +21,11 @@ module.exports = function(app, settings) {
   });
 
   // Logout
-  app.post('/logout', checkCSRF, function(req, res) {
+  app.get('/logout', function(req, res) {
     if (req.session) {
       delete req.session.email;
       delete req.session._csrf;
     }
-    res.redirect('/');
+    res.redirect('/', 303);
   });
 };
