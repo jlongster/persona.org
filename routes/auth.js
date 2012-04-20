@@ -26,6 +26,6 @@ module.exports = function(app, settings) {
       delete req.session.email;
       delete req.session._csrf;
     }
-    res.redirect('/', 303);
+    res.redirect('/?logged_out=1', 303);
   });
 };
