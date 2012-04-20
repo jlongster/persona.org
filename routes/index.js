@@ -13,7 +13,7 @@ module.exports = function(app) {
   // Home/main
   app.get('/', function(req, res) {
     // If the user has logged out, we should force no-cache so that CSRF can be renewed
-    if (req.params.logged_out) {
+    if (req.query.logged_out) {
       res.header('Cache-Control', 'no-cache, private, no-store, must-revalidate, max-stale=0, post-check=0, pre-check=0');
     }
     res.render('index', { title: 'Persona.org' });
