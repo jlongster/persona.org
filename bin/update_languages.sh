@@ -8,4 +8,8 @@ msginit --no-translator \
       --input=./locale/templates/LC_MESSAGES/messages.pot \
       --output-file=./locale/${l}/LC_MESSAGES/messages.po \
       -l ${l}
+msginit --no-translator \
+      --input=./locale/templates/LC_MESSAGES/client.pot \
+      --output-file=./locale/${l}/LC_MESSAGES/client.po \
+      -l ${l}
 done
