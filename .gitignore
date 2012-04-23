@@ -3,3 +3,4 @@ settings.js
 node_modules
 npm-debug.log
 locale
+public/javascripts/i18n

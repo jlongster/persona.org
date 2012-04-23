@@ -32,7 +32,13 @@ Install node by using brew or through the website http://nodejs.org/#download
 
 > compile_mo.sh locale/
 
+> mkdir public/javascripts/i18n
+
+> ./bin/compile_json.sh locale public/javascripts/i18n/
+
 (Note: These instructions are from https://github.com/mozilla/i18n-abide/blob/master/README.md)
+
+We copied the client-side translation steps from i18n-abide, but had to tweak it a little to work. Eventually we should converge on a set of scripts and share them. Mainly, I changed the path to po2json in compile_json.sh, and gettext.js needed to read from the "messages" domain instead of the "client" domain.
 
 > node app.js
 
